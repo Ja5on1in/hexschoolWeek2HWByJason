@@ -143,6 +143,11 @@ body {
     font-family: Bruno Ace SC;
 }
 
+.container {
+    width: 1296px;
+    margin: 0 auto;
+}
+
 .header {
     background-color: #000000;
 
@@ -161,9 +166,6 @@ body {
     text-align: right;
 }
 
-.header section {
-    padding: 72px 312px;
-}
 
 .header-section {
     width: 636px;
@@ -177,7 +179,7 @@ body {
 
 .header-nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 40px;
 
 }
@@ -224,7 +226,6 @@ body {
 /* card */
 .about-me {
     width: 636px;
-    margin: 206px 134px 206px 312px;
 }
 
 .about-me-introduction {
@@ -239,7 +240,7 @@ body {
 }
 
 .card {
-    width: 306px;
+    width: 48%;
     border: 1px solid #E3E3E3;
 }
 
@@ -269,8 +270,6 @@ body {
 .contact {
     background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
 }
 
 .contact li {
@@ -278,9 +277,19 @@ body {
 }
 
 .contact ul {
-    width: 657px;
     padding: 127px 0px;
 }
+
+.social-link {
+    border-radius: 40px;
+}
+
+.social-link:hover {
+    box-shadow: 0px 0px 16px 3px #9094FFE5;
+    transition: 0.5s;
+}
+
+
 
 /* project */
 .project {
@@ -299,13 +308,13 @@ body {
     width: 1296px;
 }
 
-.project-up-text {
+/* .project-up-text {
     position: relative;
-}
+} */
 
 .project-btn {
-    position: absolute;
-    bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
     background-color: black;
     border-radius: 32px;
 }
@@ -392,6 +401,18 @@ body {
     padding-right: 24px;
 }
 
+.py-3 {
+    color: #000;
+}
+
 .vertical-align-middle {
     vertical-align: middle;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
 }
